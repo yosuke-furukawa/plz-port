@@ -1,0 +1,32 @@
+{
+  "name": "plz-port",
+  "version": "1.0.0",
+  "description": "port scan",
+  "main": "index.js",
+  "scripts": {
+    "test": "eater",
+    "cov": "nyc npm test",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosuke-furukawa/plz-port.git"
+  },
+  "keywords": [
+    "port",
+    "scan",
+    "random"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/plz-port/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/plz-port#readme",
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "eater": "^1.5.5",
+    "must-call": "^1.0.0",
+    "nyc": "^6.4.4"
+  }
+}
