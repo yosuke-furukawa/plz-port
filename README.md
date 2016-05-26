@@ -9,11 +9,15 @@ please give me any port if the port is opened.
 ```javascript
 const plzPort = require('plz-port');
 plzPort().then((port) => {
-  assert(port >= 3000);
+  assert(port >= 3000); // random port range is 3000 < 65535
   assert(port <= 65535);
 });
 
 plzPort(3000).then((port) => {
   console.log(port); // 3000 if the port is opened.
+});
+
+plzPort(8080).then((port) => {
+  console.log(port); // 8081, 8082, 8083.... increment the port until found open port
 });
 ```
