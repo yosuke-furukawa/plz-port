@@ -8,6 +8,7 @@ please give me any port if the port is opened.
 
 ```javascript
 const plzPort = require('plz-port');
+
 plzPort().then((port) => {
   assert(port >= 3000); // random port range is 3000 < 65535
   assert(port <= 65535);
